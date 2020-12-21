@@ -20,3 +20,29 @@ matrix:
       node_js: 'node'
     - env: COMMAND=jshint
       node_js: 'node'
+   # Enabling power support architecture
+    - arch: ppc64le
+      env: COMMAND=node
+      node_js: '0.12'
+    - arch: ppc64le
+      env: COMMAND=node
+      node_js: 'node'
+    - arch: ppc64le
+      env: COMMAND=node
+      node_js: 4
+    - arch: ppc64le
+      env: COMMAND=node
+      node_js: 5
+    - arch: ppc64le
+      env: COMMAND=node
+      node_js: 6
+    - arch: ppc64le
+      env: COMMAND=browser
+      node_js: 'node'
+    - arch: ppc64le
+      env: COMMAND=cover
+      node_js: 'node'
+    - arch: ppc64le
+      env: COMMAND=jshint
+      node_js: 'node'
+      
