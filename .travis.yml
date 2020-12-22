@@ -23,9 +23,6 @@ matrix:
    # Enabling power support architecture
     - arch: ppc64le
       env: COMMAND=node
-      node_js: '0.12'
-    - arch: ppc64le
-      env: COMMAND=node
       node_js: 'node'
     - arch: ppc64le
       env: COMMAND=node
@@ -45,4 +42,8 @@ matrix:
     - arch: ppc64le
       env: COMMAND=jshint
       node_js: 'node'
-      
+ 
+ before_install:
+   if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then
+    sudo apt-get install npm
+   fi
