@@ -43,5 +43,5 @@ matrix:
       env: COMMAND=jshint
       node_js: 'node'
  
- before_install:
-     - 'if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then sudo apt-get install npm; fi'
+before_install:
+     - if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then    sudo apt-get install npm;   fi
